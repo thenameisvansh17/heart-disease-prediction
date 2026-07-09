@@ -1,0 +1,99 @@
+{
+  "best_model": "Gradient Boosting",
+  "n_train": 734,
+  "n_test": 184,
+  "n_total": 918,
+  "n_features": 11,
+  "dataset": "Combined Cleveland + Hungarian + Switzerland + VA Long Beach + Statlog (deduplicated, cleaned)",
+  "test_accuracy": 0.9184782608695652,
+  "test_precision": 0.9223300970873787,
+  "test_recall": 0.9313725490196079,
+  "test_f1": 0.926829268292683,
+  "test_roc_auc": 0.9521759923481589,
+  "brier_score_calibrated": 0.07610659191040693,
+  "feature_importance": {
+    "slope": 0.07818029650884757,
+    "chol": 0.03609516977522725,
+    "cp": 0.020462697274031653,
+    "oldpeak": 0.01704328072692502,
+    "sex": 0.013582018173123,
+    "trestbps": 0.004579148732663907,
+    "exang": 0.00414275466284082,
+    "restecg": 0.002433046389287519,
+    "age": 0.0013330942132951495,
+    "fbs": 0.0008548541367767559,
+    "thalach": 0.0003048780487805658
+  },
+  "leaderboard": [
+    {
+      "model": "Gradient Boosting",
+      "cv_roc_auc": 0.9379629805104059,
+      "test_accuracy": 0.9184782608695652,
+      "test_precision": 0.9223300970873787,
+      "test_recall": 0.9313725490196079,
+      "test_f1": 0.926829268292683,
+      "test_roc_auc": 0.9490674318507891,
+      "test_brier": 0.07616694806745831
+    },
+    {
+      "model": "Stacking Ensemble",
+      "cv_roc_auc": 0.9376269399575634,
+      "test_accuracy": 0.9130434782608695,
+      "test_precision": 0.9215686274509803,
+      "test_recall": 0.9215686274509803,
+      "test_f1": 0.9215686274509803,
+      "test_roc_auc": 0.9483500717360115,
+      "test_brier": 0.07764678500480852
+    },
+    {
+      "model": "XGBoost",
+      "cv_roc_auc": 0.9398827550047063,
+      "test_accuracy": 0.907608695652174,
+      "test_precision": 0.9207920792079208,
+      "test_recall": 0.9117647058823529,
+      "test_f1": 0.916256157635468,
+      "test_roc_auc": 0.9475131516021043,
+      "test_brier": 0.08244577795267105
+    },
+    {
+      "model": "Random Forest",
+      "cv_roc_auc": 0.9361651537261293,
+      "test_accuracy": 0.9130434782608695,
+      "test_precision": 0.9134615384615384,
+      "test_recall": 0.9313725490196079,
+      "test_f1": 0.9223300970873787,
+      "test_roc_auc": 0.9399808703969392,
+      "test_brier": 0.094515102582841
+    },
+    {
+      "model": "SVM",
+      "cv_roc_auc": 0.915113907471631,
+      "test_accuracy": 0.8586956521739131,
+      "test_precision": 0.8454545454545455,
+      "test_recall": 0.9117647058823529,
+      "test_f1": 0.8773584905660378,
+      "test_roc_auc": 0.914454806312769,
+      "test_brier": 0.10015761484892982
+    },
+    {
+      "model": "Logistic Regression",
+      "cv_roc_auc": 0.909305366920543,
+      "test_accuracy": 0.8586956521739131,
+      "test_precision": 0.8454545454545455,
+      "test_recall": 0.9117647058823529,
+      "test_f1": 0.8773584905660378,
+      "test_roc_auc": 0.9084170253467241,
+      "test_brier": 0.11000544591563917
+    },
+    {
+      "model": "Decision Tree",
+      "cv_roc_auc": 0.8992937715701943,
+      "test_accuracy": 0.8206521739130435,
+      "test_precision": 0.8709677419354839,
+      "test_recall": 0.7941176470588235,
+      "test_f1": 0.8307692307692308,
+      "test_roc_auc": 0.8890483022477284,
+      "test_brier": 0.12937374244818384
+    }
+  ]
+}
